@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Peminjaman Barang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>SISTEM INFORMASI INVENTARIS BARANG</h1>
+</header>
+
+<nav>
+  <a href="dashboard.html"><button>Dashboard</button></a>
+  <a href="data_barang.html"><button>Data Barang</button></a>
+  <a href="peminjaman.html"><button class="active">Peminjaman</button></a>
+  <a href="rekap.html"><button>Laporan/Rekap</button></a>
+</nav>
+
+<div class="content">
+  <h2>Data Peminjaman</h2>
+
+  <table id="tablePeminjaman">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Peminjam</th>
+        <th>Kode Barang</th>
+        <th>Nama Barang</th>
+        <th>Tgl Pinjam</th>
+        <th>Tgl Kembali</th>
+        <th>Status</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody id="tbodyPeminjaman"></tbody>
+  </table>
+
+  <div class="form-actions">
+    <button class="btn btn-primary" onclick="showFormPeminjaman()">+ Tambah Data</button>
+  </div>
+</div>
+
+<!-- Modal Peminjaman -->
+<div id="modalFormPeminjaman" class="modal">
+  <div class="modal-content">
+    <h2 id="modalTitlePeminjaman">Form Input Data Peminjaman</h2>
+    (isi form tetap sama)
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
