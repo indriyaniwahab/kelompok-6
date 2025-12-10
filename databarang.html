@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Barang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>SISTEM INFORMASI INVENTARIS BARANG</h1>
+</header>
+
+<nav>
+  <a href="dashboard.html"><button>Dashboard</button></a>
+  <a href="data_barang.html"><button class="active">Data Barang</button></a>
+  <a href="peminjaman.html"><button>Peminjaman</button></a>
+  <a href="rekap.html"><button>Laporan/Rekap</button></a>
+</nav>
+
+<div class="content">
+  <h2>Data Barang</h2>
+
+  <table id="tableBarang">
+    <thead>
+      <tr>
+        <th>Kode Barang</th>
+        <th>Nama</th>
+        <th>Jenis</th>
+        <th>Tahun</th>
+        <th>Kondisi</th>
+        <th>Jumlah</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody id="tbodyBarang"></tbody>
+  </table>
+
+  <div class="form-actions">
+    <button class="btn btn-primary" onclick="showFormBarang()">+ Tambah Data</button>
+  </div>
+</div>
+
+<!-- Modal Barang -->
+<div id="modalFormBarang" class="modal">
+  <div class="modal-content">
+    <h2 id="modalTitle">Form Input Data Barang</h2>
+    <!-- Copy isi form dari file aslinya -->
+    (isi form tetap sama)
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
